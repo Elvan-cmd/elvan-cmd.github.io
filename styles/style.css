@@ -1,12 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
 
+/* Overriding default padding and margin value to 0 for the elements below */
 html,
 body,
 div,
 span,
-applet,
-object,
-iframe,
 h1,
 h2,
 h3,
@@ -14,62 +12,9 @@ h4,
 h5,
 h6,
 p,
-blockquote,
-pre,
-a,
-big,
-code,
-del,
-em,
 img,
-ins,
-kbd,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
 footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+header {
     margin: 0;
     padding: 0
 }
@@ -349,7 +294,7 @@ footer .copyright a:hover {
     display: block;
 }
 
-#video {
+#dogs {
     content: "";
     display: block;
     min-height: 300px;
@@ -358,7 +303,7 @@ footer .copyright a:hover {
     box-shadow: inset 0 -1px 5px rgba(0, 0, 0, 0.6);
 }
 
-#video h1 {
+#dogs h1 {
     font-size: 64px;
     color: #fff;
     line-height: 0.879em;
@@ -368,7 +313,7 @@ footer .copyright a:hover {
     padding-top: 120px;
 }
 
-#video h2 {
+#dogs h2 {
     font-size: 13px;
     color: #FFF;
     line-height: 1em;
@@ -461,82 +406,4 @@ footer .copyright a:hover {
 .contact {
     background: url("../images/header.jpg");
     background-size: cover;
-}
-
-@media handheld and (max-width:480px),
-screen and (max-device-width:480px),
-screen and (max-width:767px) {
-    body {
-        padding: 0;
-    }
-}
-
-@media handheld and (max-width:479px),
-screen and (max-device-width:479px),
-screen and (max-width:479px) {
-    #contact-form .text-input {
-        float: left;
-    }
-
-    header {
-        border-bottom: none;
-        position: relative;
-    }
-
-    #home-head {
-        min-height: 250px;
-    }
-
-    header .main-nav {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    header .main-nav ul {
-        width: 100%;
-    }
-
-    header .main-nav ul li,
-    header .main-nav ul > li.last {
-        display: block;
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
-
-    header .main-nav ul li a {
-        padding: 4px 0;
-        background: #e4e4e4;
-        display: block;
-        margin-bottom: 4px;
-    }
-
-    div.columns {
-        width: 100%;
-    }
-
-    div.one-half,
-    div.one-third,
-    div.two-third,
-    div.three-fourth,
-    div.one-fourth {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    div.one-third,
-    div.one-fourth,
-    .copyright {
-        width: 95%;
-        float: none;
-        padding: 0 0 0 10px;
-    }
-
-    .copyright {
-        text-align: center;
-    }
-
-    #main-content .text-intro h2 {
-        font-size: 30px;
-    }
 }
