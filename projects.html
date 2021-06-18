@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Elvan Ayverdi | Projects</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html" class="active">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home-head" class="work">
+        <h1>BROWSE MY PROJECTS!</h1>
+    </section>
+    <section id="main-content">
+        <div class="text-intro">
+            <h2>Projets</h2>
+        </div>
+        <div class="columns">
+            <div class="img-first">
+                <a href="#">
+                    <img id="pic" src="images/purple.jpg" alt="">
+                </a>
+            </div>
+            <div class="img-second"><a href="#"><img src="images/pink.jpg" alt=""></a></div>
+        </div>
+    </section>
+    <script>
+        // Assign html object to a variable
+        var pic = document.getElementById("pic");
+
+        // Function to change the src attribute of the above element
+        // takes a single parameter which is the name of the image
+        function changeImage(imgName) {
+            // Use string concatenation to build a proper image path
+            pic.src = "./images/" + imgName + ".jpg";
+        }
+
+        // adding an event listener to the image to change the image once the mouse cursor is over the image
+        pic.addEventListener('mouseover', function() {
+            changeImage("yellow")
+        });
+        // adding an event listener to the image to change the image once the mouse cursor is not over the image anymore
+        pic.addEventListener('mouseout', function() {
+            changeImage("purple")
+        });
+
+    </script>
+    <footer>
+        <div class="copyright"><small>Copyright. All Rights Reserved.</small></div>
+    </footer>
+</body>
+
+</html>
